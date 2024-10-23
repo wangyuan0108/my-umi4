@@ -10,7 +10,7 @@ const HomePage: React.FC = () => {
     <PageContainer ghost>
       <div className={styles.container}>
         <Guide name={trim(name)} />
-        1111122233333
+        11111
       </div>
     </PageContainer>
   );
