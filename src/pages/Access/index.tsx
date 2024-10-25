@@ -12,7 +12,7 @@ const AccessPage: React.FC = () => {
       }}
     >
       <Access accessible={access.canSeeAdmin}>
-        <Button>只有 Admin </Button>
+        <Button>只有 Admin 可以看到这个按钮期望而放弃我而去玩儿气味</Button>
       </Access>
     </PageContainer>
   );
