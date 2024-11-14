@@ -36,6 +36,9 @@ importers:
       '@umijs/plugin-openapi':
         specifier: ^1.3.3
         version: 1.3.3(chokidar@3.6.0)(encoding@0.1.13)(typescript@5.6.3)(umi@4.3.27(@babel/core@7.25.8)(@types/node@22.7.6)(@types/react@18.3.11)(eslint@8.35.0)(lightningcss@1.22.1)(prettier@2.8.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@3.29.5)(stylelint@14.8.2)(terser@5.36.0)(type-fest@1.4.0)(typescript@5.6.3)(webpack@5.95.0))
+      cross-env:
+        specifier: ^7.0.3
+        version: 7.0.3
       husky:
         specifier: ^9
         version: 9.1.6
@@ -51,6 +54,9 @@ importers:
       prettier-plugin-packagejson:
         specifier: ^2.4.3
         version: 2.5.3(prettier@2.8.8)
+      swagger-ui-dist:
+        specifier: ^5.18.2
+        version: 5.18.2
       tailwindcss:
         specifier: ^3
         version: 3.4.14
@@ -1159,6 +1165,9 @@ packages:
     peerDependencies:
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
+
+  '@scarf/scarf@1.4.0':
+    resolution: {integrity: sha512-xxeapPiUXdZAE3che6f3xogoJPeZgig6omHEy1rIY5WVsB3H2BHNnZH+gHG6x91SCWyQCzWGsuL2Hh3ClO5/qQ==}
 
   '@sinclair/typebox@0.27.8':
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
@@ -2361,6 +2370,11 @@ packages:
 
   create-react-class@15.7.0:
     resolution: {integrity: sha512-QZv4sFWG9S5RUvkTYWbflxeZX+JG7Cz0Tn33rQBJ+WFQTqTfUTjMjiv9tnfXazjsO5r0KhPs+AqCjyrQX6h2ng==}
+
+  cross-env@7.0.3:
+    resolution: {integrity: sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==}
+    engines: {node: '>=10.14', npm: '>=6', yarn: '>=1'}
+    hasBin: true
 
   cross-spawn@7.0.3:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}
@@ -6024,6 +6038,9 @@ packages:
   swagger-ui-dist@4.19.1:
     resolution: {integrity: sha512-n/gFn+R7G/BXWwl5UZLw6F1YgWOlf3zkwGlsPhTMhNtAAolBGKg0JS5b2RKt5NI6/hSopVaSrki2wTIMUDDy2w==}
 
+  swagger-ui-dist@5.18.2:
+    resolution: {integrity: sha512-J+y4mCw/zXh1FOj5wGJvnAajq6XgHOyywsa9yITmwxIlJbMqITq3gYRZHaeqLVH/eV/HOPphE6NjF+nbSNC5Zw==}
+
   swagger2openapi@7.0.8:
     resolution: {integrity: sha512-upi/0ZGkYgEcLeGieoz8gT74oWHA0E7JivX7aN9mAf+Tc7BQoRBvnIGHoPDw+f9TXTW4s6kGYCZJtauP6OYp7g==}
     hasBin: true
@@ -7948,6 +7965,8 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
+  '@scarf/scarf@1.4.0': {}
+
   '@sinclair/typebox@0.27.8': {}
 
   '@stylelint/postcss-css-in-js@0.38.0(postcss-syntax@0.36.2(postcss@8.4.47))(postcss@8.4.47)':
@@ -9840,6 +9859,10 @@ snapshots:
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
+
+  cross-env@7.0.3:
+    dependencies:
+      cross-spawn: 7.0.3
 
   cross-spawn@7.0.3:
     dependencies:
@@ -14237,6 +14260,10 @@ snapshots:
       stable: 0.1.8
 
   swagger-ui-dist@4.19.1: {}
+
+  swagger-ui-dist@5.18.2:
+    dependencies:
+      '@scarf/scarf': 1.4.0
 
   swagger2openapi@7.0.8(encoding@0.1.13):
     dependencies:

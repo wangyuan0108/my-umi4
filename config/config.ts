@@ -2,10 +2,20 @@ import { defineConfig } from '@umijs/max';
 import routes from '../src/routes';
 
 export default defineConfig({
+  title: 'react-template',
+  publicPath: '/',
   antd: {},
   access: {},
   model: {},
+  dva: {
+    immer: { enableES5: true },
+  },
+  define: {
+    'process.env.BASE_API': '/api',
+  },
+  theme: {},
   initialState: {},
+  ignoreMomentLocale: true,
   plugins: ['@umijs/max-plugin-openapi'],
 
   //   presets: ['umi-presets-pro'],
@@ -20,6 +30,13 @@ export default defineConfig({
     title: 'water',
   },
   routes,
+  targets: {
+    ie: 10,
+  },
+  fastRefresh: true,
+  mfsu: {
+    strategy: 'normal',
+  },
   npmClient: 'pnpm',
   tailwindcss: {},
   proxy: {
