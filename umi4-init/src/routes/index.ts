@@ -20,7 +20,7 @@
 //     },
 //   ],
 
-import userRoutes from './modules/user';
+// import userRoutes from './modules/user';
 
 
 // const routes = [
@@ -43,10 +43,6 @@ const routes = [
     path: '/access',
     component: '@/pages/Access',
   },
-  {
-    name: ' CRUD 示例',
-    path: '/table',
-    component: '@/pages/Table',
-  },
+  
 ];
 export default routes;
